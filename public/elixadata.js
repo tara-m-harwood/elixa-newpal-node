@@ -87,17 +87,7 @@ var elixaSynons = {
   cannot: ["can't"],
   desire: ["want", "need"],
   everyone: ["everybody", "nobody", "noone"],
-  family: [
-    "mother",
-    "mom",
-    "father",
-    "dad",
-    "sister",
-    "brother",
-    "wife",
-    "children",
-    "child",
-  ],
+  family: ["mother","mom","father","dad","sister","brother","wife","children","child"],
   happy: ["elated", "glad", "better"],
   sad: ["unhappy", "depressed", "sick"],
   apologise: ["apologize", "apology"],
@@ -185,10 +175,23 @@ var elixaKeywords = [
     ],
   ],
 
+    [
+    "Javascript runtime",
+    75,
+    [
+      [
+        "* Javascript * runtime *",
+        [
+          "Oh, I heard something about a Javascript runtime error once!  Checkout this thread on #denver-tech-questions:  https://flatiron-school.slack.com/archives/C010H32LNN7/p1614014061002600",
+        ],
+      ],
+    ],
+  ],
+
   [
     "server",
     25,
-    [["* server *", ["Are you sure you are using the right port?"]]],
+    [["* server *", ["Hmmmm ... are you sure you are using the right port?"]]],
   ],
 
   // *********
@@ -201,17 +204,26 @@ var elixaKeywords = [
         "* javascript *",
         [
           "Are you including 'defer' in your script tags?  My friend Damon warned me about that!",
-          "Sometimes my friend Tara mixes up '=' with '==' or '==='.  Could that be it?",
+          "Sometimes my friend Tara mixes up '=' with '==' or '===' when writing JS.  Could that be it?",
           "What does the console.log say?  Is there anything else you could log that might give you a clue?",
-          "Embarassing confession ... sometimes in JS I forget that interpolated strings need backticks.",
+          "Embarassing confession ... sometimes in JS I forget that interpolated strings need backticks!",
         ],
       ],
       [
         "* javascript * fetch *",
         [
-          "Is it working in Postman?",
-          "Maybe the problem is on the really on the backend?",
+          "Hmmmm ... is it working in Postman?",
+          "Perhaps the problem is on the really on the backend?",
           "Are you sure that JSON body is exactly what is expected, including the nesting?  My friend Arielle taught me that one!",
+          "Figuring out what goes -inside- the fetch function versus -outside- the fetch function can be tricky!"
+        ],
+      ],
+      [
+        "* javascript * function *",
+        [
+          "I used to forget to use explicit return in Javascript functions, but my friend Ahmed has been helping me with that!",
+          "Interesting ... what happens when you console.log the return value of your JS function?",
+          "Have you ever struggled with what needs to go -inside- the forEach loop as opposed to -outside- of it?  That always trips me up!"
         ],
       ],
     ],
@@ -297,7 +309,7 @@ var elixaKeywords = [
       [
         "* i forget *",
         [
-          "We are learning so much herer -- I can understand why you might forget (2) !  Is there someone else you could ask?",
+          "We are learning so much here -- I can understand why you might forget (2) !  Is there someone else you could ask?",
           "Why do you think you can't remember (2) ?",
           "Maybe you are just rusty on (2) ?  Do you have any older projects you could look at for reference?",
           "Maybe you do remember (2), but you have been working too hard on it ... perhaps take a break and see if it comes back to you!",
@@ -532,7 +544,6 @@ var elixaKeywords = [
           "Suppose you got (3) soon.",
           "What if you never got (3) ?",
           "What would getting (3) mean to you ?",
-          "What does wanting (3) have to do with this discussion ?",
         ],
       ],
       [
@@ -567,7 +578,7 @@ var elixaKeywords = [
         [
           "Is it because you are (2) that you came to me ?",
           "How long have you been (2) ?",
-          "Do you enjoy being (2) ?",
+          "Do you feel about being (2) ?",
           "Do you know anyone else who is (2) ?",
         ],
       ],
@@ -613,8 +624,10 @@ var elixaKeywords = [
         [
           "You say (1) ?",
           "Can you elaborate on that ?",
-          "Do you say (1) for some special reason ?",
-          "That's quite interesting.",
+          "Hmmmm ... I don't know much about (1). Can you explain a little more?",
+          "Interesting! Will you teach me something about (1)? I don't know the answer but I'd love to learn!",
+          "That's quite interesting!  I'd love to hear more about (1) ... can you break that down for me?",
+          "I'm still a beginner, but maybe if you explain it step by step we can work it out together?"
         ],
       ],
     ],
@@ -648,9 +661,9 @@ var elixaKeywords = [
       [
         "* you *",
         [
-          "We were discussing you -- not me.",
-          "Oh, I (2) ?",
-          "You're not really talking about me -- are you ?",
+          "Let's not talk about me right now -- we are here to focus on your problem!",
+          "It is interesting that you say I (2), but I'd rather talk about your troubleshooting issue!",
+          "When you say that I (2), how might that relate to your problem ?",
           "What are your feelings now ?",
         ],
       ],
@@ -664,9 +677,9 @@ var elixaKeywords = [
         "*",
         [
           "You seem to be quite positive.",
-          "You are sure.",
-          "I see.",
-          "I understand.",
+          "Sounds like you are sure!",
+          "Got it!  When else can you tell me?",
+          "I understand ... I think!",
         ],
       ],
     ],
