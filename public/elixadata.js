@@ -1,34 +1,4 @@
-Skip to content
-Search or jump to…
 
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@tara-m-harwood 
-tara-m-harwood
-/
-elixa-newpal-node
-1
-10
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-elixa-newpal-node/public/elixadata.js /
-@tara-m-harwood
-tara-m-harwood Update elixadata.js
-Latest commit 3779816 8 minutes ago
- History
- 1 contributor
-961 lines (941 sloc)  24.9 KB
-  
 /// data for elizabot.js
 // entries prestructured as layed out in Weizenbaum's description
 // [cf: Communications of the ACM, Vol. 9, #1 (January 1966): p 36-45.]
