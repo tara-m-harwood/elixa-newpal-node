@@ -1,3 +1,34 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@tara-m-harwood 
+tara-m-harwood
+/
+elixa-newpal-node
+1
+10
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+elixa-newpal-node/public/elixadata.js /
+@tara-m-harwood
+tara-m-harwood Update elixadata.js
+Latest commit 3779816 8 minutes ago
+ History
+ 1 contributor
+961 lines (941 sloc)  24.9 KB
+  
 /// data for elizabot.js
 // entries prestructured as layed out in Weizenbaum's description
 // [cf: Communications of the ACM, Vol. 9, #1 (January 1966): p 36-45.]
@@ -176,31 +207,69 @@ var elixaKeywords = [
   ],
 
   [
-    "server",
-    5,
+    "error",
+    15,
     [
-      ["* server *", 
-        ["Are you sure you are using the right port?"],
-        ["Is this something you could test out with Postman?"],
-        ["Did you start the server from the right directory?  I make that mistake sometimes!"],
-        ["I'm not sure if this helps, but I have heard is is important to always start your backend server before your frontend server.  Otherwise they get confused about the ports!"]
+      [
+        "* error *",
+        [ 
+          "goto xnone",
+          "Could there be an error message with a clue you missed?  My friend Blake taught me 'always read the error message carefully, even if it is long!'",
+          "goto sad"
+        ]  
       ]
     ],
   ],
 
-   [
-    "sad",
-    95,
-      ["* sad *", 
-        ["I am sorry you are having this problem.  Do you think taking a break might help?"],
-        ["My pal Ahmed is always saying to take a lot of breaks when coding -- sometimes the answer to a problem comes when our minds are relaxed and thinking about something else!"],
-        ["You have been working so hard on this!  Do you want to take a quick stretch break? My friend Tara likes this 5 min video: https://www.fitnessblender.com/videos/relaxing-stretching-workout-for-stiff-muscles-and-stress-relief-easy-stretches-to-do-at-work"],
-        ["How late is it?  Sometimes when I'm stuck on a problem what I really need is a good night's rest!"],
-        ["I can't help with this one, but I don't want you to feel stuck. Maybe reach out to someone who might know more about it?"],
-        ["My friend Tara likes to take long walks when she is stuck on a problem; do you think that would help?"],
-        ["Is there any class you could ask for that might help you gain understanding of this issue?"]
+  [
+    "git",
+    50,
+    [
+      [
+        "* git *", 
+        [
+          "Oh no, is that a Git problem?  Those are the worst!  Frankly I'd go straight to #denver-tech-questions for that one",
+          "If your problem is related to Git, I can't help you -- but I hope this cartoon will make you smile?  https://xkcd.com/1597/",
+          "Git problems are so hard and so aggravating!  I recommend you ask someone who is more experienced than me!",        
+          "goto sad",
+        ]
+      ],
+    ],
+  ],
+
+  [
+    "server",
+    5,
+    [
+      [
+        "* server *", 
+        [
+          "Are you sure you are using the right port?",
+          "Is this something you could test out with Postman?",
+          "Did you start the server from the right directory?  I make that mistake sometimes!",
+          "I'm not sure if this helps, but I have heard is is important to always start your backend server before your frontend server.  Otherwise they get confused about the ports!"
+        ]  
       ]
     ],
+  ],
+
+  [
+    "sad",
+    95
+    [
+      [
+        "* sad *",
+        [ 
+          "I am sorry you are having this problem.  Do you think taking a break might help?",
+          "My pal Ahmed is always saying to take a lot of breaks when coding -- sometimes the answer to a problem comes when our minds are relaxed and thinking about something else!",
+          "You have been working so hard on this!  Do you want to take a quick stretch break? My friend Tara likes this 5 min video: https://www.fitnessblender.com/videos/relaxing-stretching-workout-for-stiff-muscles-and-stress-relief-easy-stretches-to-do-at-work",
+          "How late is it?  Sometimes when I'm stuck on a problem what I really need is a good night's rest!",
+          "I can't help with this one, but I don't want you to feel stuck. Maybe reach out to someone who might know more about it?",
+          "My friend Tara likes to take long walks when she is stuck on a problem; do you think that would help?",
+          "Is there any class you could ask for that might help you gain understanding of this issue?"
+        ]
+      ]  
+    ]
   ],
 
   // *********
@@ -833,15 +902,13 @@ var elixaKeywords = [
       [
         "* @everyone *",
         [
-          "Really, (2) ?",
           "Surely not (2).",
           "Can you think of anyone in particular ?",
           "Who, for example?",
           "Are you thinking of a very special person ?",
           "Who, may I ask ?",
           "Someone special perhaps ?",
-          "You have a particular person in mind, don't you ?",
-          "Who do you think you're talking about ?",
+          "Do you have a particular person in mind?",
         ],
       ],
     ],
@@ -921,5 +988,3 @@ var elixaPostTransforms = [
   /Earlier you said your( own)? (\w+)( now)?\./,
   "Earlier you talked about your $2.",
 ];
-
-// eof
