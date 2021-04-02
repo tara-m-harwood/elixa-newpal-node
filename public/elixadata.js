@@ -90,7 +90,7 @@ var elixaSynons = {
   sad: ["unhappy", "depressed", "sick", "stuck", "frustrated", "angry", "upset", "tired", "bored", "sleepy", "mad"],
   apologise: ["apologize", "apology"],
   Javascript: ["JS", "frontend", "event listener", "button", "forEach"],
-  server: ["routes", "backend"]
+  server: ["routes", "backend"],
   git: ["GitHub", "push", "pull", "branch", "merge"]
 };
 
